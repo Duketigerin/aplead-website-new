@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt — APLEAD Applied Leadership</title>
+  <meta name="description" content="Erstgespräch buchen oder Nachricht senden. Das erste Gespräch ist kostenlos, unverbindlich und dauert 45–60 Minuten.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+<nav class="aplead-nav" role="navigation" aria-label="Hauptnavigation">
+  <div class="nav-container">
+    <a href="/" class="nav-logo" aria-label="APLEAD – zur Startseite">
+      <img src="/img/logo.png" alt="APLEAD Applied Leadership" class="nav-logo-img">
+    </a>
+    <div class="nav-links">
+      <a href="/coach/">APLEAD Coach</a>
+      <a href="/develop/">APLEAD Develop</a>
+      <a href="/transform/">APLEAD Transform</a>
+      <a href="/academy/">Academy</a>
+      <a href="/ueber-mich.html">Über mich</a>
+    </div>
+    <a href="/kontakt.html" class="nav-cta">Erstgespräch buchen</a>
+    <button class="nav-hamburger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="nav-mobile-overlay" role="dialog" aria-label="Mobile Navigation">
+  <a href="/coach/">APLEAD Coach</a>
+  <a href="/develop/">APLEAD Develop</a>
+  <a href="/transform/">APLEAD Transform</a>
+  <a href="/academy/">Academy</a>
+  <a href="/ueber-mich.html">Über mich</a>
+  <a href="/kontakt.html" class="mobile-cta">Erstgespräch buchen</a>
+</div>
+
+<main id="main-content">
+
+  <!-- HERO -->
+  <section class="hero hero--small" aria-label="Kontakt">
+    <div class="hero-bar" aria-hidden="true"></div>
+    <div class="hero-content">
+      <span class="eyebrow">Kontakt</span>
+      <h1><span class="headline-accent">Lass uns reden.</span></h1>
+      <p class="hero-sub">Das erste Gespräch ist kostenlos, unverbindlich und dauert 45–60 Minuten.</p>
+    </div>
+  </section>
+
+  <!-- KONTAKT ZWEI-SPALTEN -->
+  <section class="section section--white" aria-label="Erstgespräch und Formular">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LINKS: ERSTGESPRÄCH -->
+        <div class="contact-box">
+          <span class="eyebrow">Direktbuchung</span>
+          <h3>Erstgespräch buchen</h3>
+          <p>45 Minuten. Kein Verkaufsgespräch. Wir schauen gemeinsam ob, was und wie ich helfen kann. Für alle APLEAD Coach, Develop und Transform Anfragen.</p>
+          <a href="#CALENDLY-LINK" class="btn-primary" aria-label="Termin über Calendly buchen">Termin buchen →</a>
+
+          <div style="margin-top:48px; padding-top:40px; border-top: 1px solid #E0E0DE">
+            <span class="eyebrow" style="color:var(--mid-gray)">Kontaktdaten</span>
+            <div class="contact-info" style="margin-top:20px">
+              <div class="contact-info-item">
+                <span class="info-label">E-Mail</span>
+                <span class="info-value"><a href="mailto:[E-MAIL-PLATZHALTER]">[E-MAIL-PLATZHALTER]</a></span>
+              </div>
+              <div class="contact-info-item">
+                <span class="info-label">LinkedIn</span>
+                <span class="info-value"><a href="[LINKEDIN-PLATZHALTER]" target="_blank" rel="noopener noreferrer">[LINKEDIN-PLATZHALTER]</a></span>
+              </div>
+              <div class="contact-info-item">
+                <span class="info-label">Standort</span>
+                <span class="info-value">Österreich · International tätig</span>
+              </div>
+              <div class="contact-info-item">
+                <span class="info-label">Reaktionszeit</span>
+                <span class="info-value">Innerhalb von 24 Stunden</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RECHTS: FORMULAR -->
+        <div class="contact-box">
+          <span class="eyebrow">Direkte Nachricht</span>
+          <h3>Nachricht senden</h3>
+          <p>Bevorzugen Sie eine schriftliche Anfrage? Ich melde mich innerhalb von 24 Stunden.</p>
+
+          <form class="contact-form" novalidate action="#" method="post">
+            <div class="form-group">
+              <label for="name">Name <span style="color:var(--mid-gray)">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Ihr vollständiger Name" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">E-Mail <span style="color:var(--mid-gray)">*</span></label>
+              <input type="email" id="email" name="email" placeholder="ihre@email.at" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="unternehmen">Unternehmen <span style="color:var(--mid-gray); font-size:11px">(optional)</span></label>
+              <input type="text" id="unternehmen" name="unternehmen" placeholder="Ihr Unternehmen" autocomplete="organization">
+            </div>
+            <div class="form-group">
+              <label for="betreff">Betreff <span style="color:var(--mid-gray)">*</span></label>
+              <select id="betreff" name="betreff" required>
+                <option value="" disabled selected>Bitte auswählen …</option>
+                <option value="coach">APLEAD Coach</option>
+                <option value="develop">APLEAD Develop</option>
+                <option value="transform">APLEAD Transform</option>
+                <option value="academy">APLEAD Academy</option>
+                <option value="executive">Executive Anfrage</option>
+                <option value="sonstiges">Sonstiges</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="nachricht">Nachricht <span style="color:var(--mid-gray)">*</span></label>
+              <textarea id="nachricht" name="nachricht" placeholder="Beschreiben Sie kurz Ihre Situation und Ihr Anliegen …" required rows="5"></textarea>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" id="datenschutz" name="datenschutz" required>
+              <label for="datenschutz">Ich habe die <a href="/datenschutz.html">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Daten einverstanden. <span style="color:var(--mid-gray)">*</span></label>
+            </div>
+            <button type="submit" class="btn-primary">Nachricht senden</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- B2B HINWEIS -->
+  <section class="section section--light" aria-label="Für Unternehmen">
+    <div class="container">
+      <div style="max-width:680px; margin:0 auto; text-align:center">
+        <span class="eyebrow" style="color:var(--mid-gray)">Für Unternehmen</span>
+        <h2 style="font-size:clamp(22px,3vw,36px); margin-bottom:16px">APLEAD Develop &amp; Transform</h2>
+        <p style="font-size:17px; color:var(--dark-gray); line-height:1.75">Für Anfragen zu APLEAD Develop und APLEAD Transform bitte direkt per E-Mail. Wir klären dann gemeinsam Ziele, Zielgruppe, Zeitrahmen und Budget — und ob ein Erstgespräch der sinnvolle nächste Schritt ist.</p>
+        <div style="margin-top:32px">
+          <a href="mailto:[E-MAIL-PLATZHALTER]" class="btn-outline">E-Mail senden →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="aplead-footer" aria-label="Footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="/img/logo.png" alt="APLEAD Applied Leadership" class="footer-logo-img">
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>APLEAD Coach</h4>
+          <a href="/coach/start.html">Start</a>
+          <a href="/coach/focus.html">Focus</a>
+          <a href="/coach/navigate.html">Navigate</a>
+          <a href="/coach/executive.html">Executive</a>
+        </div>
+        <div class="footer-col">
+          <h4>APLEAD Develop</h4>
+          <a href="/develop/basis.html">Basis</a>
+          <a href="/develop/plus.html">Plus</a>
+          <a href="/develop/executive.html">Executive</a>
+        </div>
+        <div class="footer-col">
+          <h4>APLEAD Transform</h4>
+          <a href="/transform/kulturdiagnose.html">Kulturdiagnose</a>
+          <a href="/transform/kulturaufbau.html">Kulturaufbau</a>
+          <a href="/transform/begleitung.html">Transformationsbegleitung</a>
+          <a href="/transform/retainer.html">Retainer</a>
+        </div>
+        <div class="footer-col">
+          <h4>Mehr</h4>
+          <a href="/academy/">Academy</a>
+          <a href="/ueber-mich.html">Über mich</a>
+          <a href="/kontakt.html">Kontakt</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 APLEAD — Applied Leadership. Christian Rychnovsky. Alle Rechte vorbehalten.</span>
+      <div class="footer-legal">
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
