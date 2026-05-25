@@ -1,14 +1,108 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datenschutzerklärung — APLEAD Applied Leadership</title>
-  <meta name="description" content="Datenschutzerklärung von APLEAD — Applied Leadership gemäß DSGVO.">
+  <title>Unser Angebot — APLEAD Applied Leadership</title>
+  <meta name="description" content="APLEAD Coach, Develop, Transform und Academy — alle Angebote im Überblick. Coaching, Führungsentwicklung, Transformation und Online-Kurse.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .angebot-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+      margin-top: 60px;
+    }
+    .angebot-block {
+      padding: 48px 48px 52px;
+      background: var(--white);
+      border: 1px solid #EFEFED;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .angebot-block:hover { border-color: var(--yellow); }
+    .angebot-num {
+      font-family: var(--font-heading);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--yellow);
+      margin-bottom: 16px;
+      display: block;
+    }
+    .angebot-title {
+      font-family: var(--font-heading);
+      font-size: clamp(20px, 2vw, 26px);
+      font-weight: 700;
+      color: var(--black);
+      text-decoration: none;
+      margin-bottom: 12px;
+      display: block;
+      transition: color var(--transition);
+    }
+    .angebot-title:hover { color: var(--yellow); }
+    .angebot-desc {
+      font-size: 14px;
+      color: var(--mid-gray);
+      line-height: 1.65;
+      margin-bottom: 32px;
+    }
+    .angebot-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-top: 1px solid #EFEFED;
+      padding-top: 24px;
+      margin-top: auto;
+    }
+    .angebot-links a {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--dark-gray);
+      letter-spacing: 0.3px;
+      padding: 10px 0;
+      border-bottom: 1px solid #F5F5F3;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: color var(--transition);
+      text-decoration: none;
+    }
+    .angebot-links a:last-child { border-bottom: none; }
+    .angebot-links a:hover { color: var(--yellow); }
+    .angebot-links a::after {
+      content: '→';
+      font-size: 12px;
+      color: var(--mid-gray);
+      transition: color var(--transition), transform var(--transition);
+    }
+    .angebot-links a:hover::after { color: var(--yellow); transform: translateX(4px); }
+    .angebot-overview-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--black);
+      text-decoration: none;
+      margin-bottom: 32px;
+      border-bottom: 2px solid var(--yellow);
+      padding-bottom: 4px;
+      transition: color var(--transition);
+    }
+    .angebot-overview-link:hover { color: var(--yellow); }
+    @media (max-width: 768px) {
+      .angebot-grid { grid-template-columns: 1fr; }
+      .angebot-block { padding: 32px 24px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -144,61 +238,88 @@
 </div>
 
 <main id="main-content">
-  <div class="legal-content">
-    <h1>Datenschutzerklärung</h1>
 
-    <p style="padding:20px; background:var(--light-gray); border-left:3px solid var(--yellow); margin-bottom:32px; font-size:14px; color:var(--dark-gray); line-height:1.7">
-      <strong>Hinweis:</strong> Die vollständige Datenschutzerklärung wird hier eingefügt. Bitte konsultieren Sie einen österreichischen Rechtsanwalt oder nutzen Sie einen DSGVO-Generator (z.B. datenschutz.org oder der WKO-Generator) um eine rechtskonforme Erklärung zu erstellen. Die unten stehenden Zwischenüberschriften zeigen die Mindestinhalte gemäß DSGVO.
-    </p>
-
-    <h2>Verantwortliche Person</h2>
-    <p>[PLATZHALTER — Name und vollständige Kontaktdaten der verantwortlichen Person gemäß Art. 13 DSGVO. Entspricht den Angaben im Impressum.]</p>
-
-    <h2>Datenerhebung auf dieser Website</h2>
-    <p>[PLATZHALTER — Beschreibung welche personenbezogenen Daten erhoben werden: z.B. beim Aufruf der Website (Server-Log-Dateien), beim Ausfüllen des Kontaktformulars (Name, E-Mail, Nachricht), bei der Terminbuchung über Calendly.]</p>
-
-    <h2>Zweck der Datenverarbeitung</h2>
-    <p>[PLATZHALTER — Beschreibung zu welchem Zweck Daten verarbeitet werden: z.B. Beantwortung von Anfragen, Terminvereinbarung, Durchführung von Coaching-Leistungen, Erfüllung vertraglicher Pflichten.]</p>
-
-    <h2>Rechtsgrundlage</h2>
-    <p>[PLATZHALTER — Angabe der Rechtsgrundlage(n) gemäß Art. 6 DSGVO: z.B. Art. 6 Abs. 1 lit. b (Vertragserfüllung), Art. 6 Abs. 1 lit. f (berechtigtes Interesse), Art. 6 Abs. 1 lit. a (Einwilligung).]</p>
-
-    <h2>Speicherdauer</h2>
-    <p>[PLATZHALTER — Angabe wie lange personenbezogene Daten gespeichert werden und nach welchen Kriterien die Speicherdauer bestimmt wird. Mindestangabe: Daten werden gelöscht sobald sie für den Verarbeitungszweck nicht mehr benötigt werden.]</p>
-
-    <h2>Weitergabe von Daten</h2>
-    <p>[PLATZHALTER — Beschreibung ob und an wen Daten weitergegeben werden: z.B. an Calendly für Terminbuchungen, an E-Mail-Dienstleister. Mit Hinweis auf ggf. Drittlandtransfer (USA) und Schutzmaßnahmen.]</p>
-
-    <h2>Betroffenenrechte</h2>
-    <p>[PLATZHALTER — Auflistung der Rechte gemäß DSGVO: Auskunftsrecht (Art. 15), Recht auf Berichtigung (Art. 16), Recht auf Löschung (Art. 17), Recht auf Einschränkung (Art. 18), Recht auf Datenübertragbarkeit (Art. 20), Widerspruchsrecht (Art. 21), Recht auf Widerruf einer Einwilligung (Art. 7 Abs. 3).]</p>
-
-    <h2>Datenschutzbehörde</h2>
-    <p>Sie haben das Recht, bei der zuständigen Aufsichtsbehörde Beschwerde einzulegen. In Österreich ist das die <strong>Österreichische Datenschutzbehörde</strong>:</p>
-    <p>Österreichische Datenschutzbehörde<br>
-    Barichgasse 40–42<br>
-    1030 Wien<br>
-    Telefon: +43 1 52 152-0<br>
-    E-Mail: dsb@dsb.gv.at<br>
-    Website: <a href="https://www.dsb.gv.at" target="_blank" rel="noopener noreferrer">www.dsb.gv.at</a></p>
-
-    <h2>Cookies</h2>
-    <p>[PLATZHALTER — Beschreibung ob und welche Cookies eingesetzt werden. Wenn keine Cookies: entsprechende Erklärung. Wenn Cookies: Art, Zweck, Speicherdauer und Widerrufsmöglichkeit.]</p>
-
-    <h2>Google Fonts</h2>
-    <p>Diese Website verwendet Google Fonts für die Typografie. Google Fonts werden vom Google-Server geladen. Dabei wird Ihre IP-Adresse an Google übermittelt. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer einheitlichen Darstellung). [PLATZHALTER — Bei Bedarf durch lokal gehostete Schriften ersetzen um Datenweitergabe zu vermeiden.]</p>
-
-    <h2>Calendly</h2>
-    <p>[PLATZHALTER — Bei Nutzung von Calendly: Erklärung zur Datenübermittlung an Calendly Inc. (USA), Zweck, Schutzmaßnahmen (Standard-Vertragsklauseln oder gleichwertig), Link zur Datenschutzerklärung von Calendly.]</p>
-
-    <h2>Kontaktformular</h2>
-    <p>[PLATZHALTER — Erklärung zur Verarbeitung der über das Kontaktformular übermittelten Daten: welche Daten, zu welchem Zweck, wie lange gespeichert, Widerspruchsmöglichkeit.]</p>
-
-    <p style="margin-top:48px; font-size:13px; color:var(--mid-gray)">Stand: [DATUM EINSETZEN]</p>
-
-    <div style="margin-top:48px; padding-top:32px; border-top:1px solid #E0E0DE">
-      <a href="/" style="font-size:13px; color:var(--mid-gray)">← Zurück zur Startseite</a>
+  <section class="hero hero--small" aria-label="Unser Angebot">
+    <div class="hero-bar" aria-hidden="true"></div>
+    <div class="hero-content">
+      <span class="eyebrow">Unser Angebot</span>
+      <h1>Was wir anbieten.<br><span class="headline-accent">Im Überblick.</span></h1>
+      <p class="hero-sub">Coaching, Führungsentwicklung, Transformation und Wissen — vier Bereiche, eine Haltung.</p>
     </div>
-  </div>
+  </section>
+
+  <section class="section section--white" aria-label="Alle Angebote">
+    <div class="container">
+      <div class="angebot-grid">
+
+        <!-- APLEAD COACH -->
+        <div class="angebot-block">
+          <span class="angebot-num">01</span>
+          <a href="/coach/" class="angebot-title">APLEAD Coach</a>
+          <p class="angebot-desc">Sparring-Partner auf Augenhöhe — mit 20 Jahren Führungspraxis in globalen Konzernen. Kein Coach der Fragen stellt. Ein Partner der mitdenkt.</p>
+          <a href="/coach/" class="angebot-overview-link">Zur Übersicht</a>
+          <div class="angebot-links">
+            <a href="/coach/start.html">Start — Einstieg &amp; Orientierung</a>
+            <a href="/coach/focus.html">Focus — Vertiefung &amp; Entwicklung</a>
+            <a href="/coach/navigate.html">Navigate — Begleitung in komplexen Situationen</a>
+            <a href="/coach/executive.html">Executive — 12-Monats-Partnerschaft</a>
+          </div>
+        </div>
+
+        <!-- APLEAD DEVELOP -->
+        <div class="angebot-block">
+          <span class="angebot-num">02</span>
+          <a href="/develop/" class="angebot-title">APLEAD Develop</a>
+          <p class="angebot-desc">Führungskräfte entwickeln mit Theorie die aus echter Praxis kommt. Kein Seminar-Wissen das auf Folien existiert.</p>
+          <a href="/develop/" class="angebot-overview-link">Zur Übersicht</a>
+          <div class="angebot-links">
+            <a href="/develop/basis.html">Basis — Strukturierte Führungsentwicklung</a>
+            <a href="/develop/plus.html">Plus — Vertiefte Entwicklung über 6 Monate</a>
+            <a href="/develop/executive.html">Executive — Für Senior-Führungskräfte</a>
+          </div>
+        </div>
+
+        <!-- APLEAD TRANSFORM -->
+        <div class="angebot-block">
+          <span class="angebot-num">03</span>
+          <a href="/transform/" class="angebot-title">APLEAD Transform</a>
+          <p class="angebot-desc">Transformationen begleiten. Kulturen aufbauen. Aus vier gelebten Transformationserfahrungen — nicht als Berater beobachtet, sondern als Führungskraft verantwortet.</p>
+          <a href="/transform/" class="angebot-overview-link">Zur Übersicht</a>
+          <div class="angebot-links">
+            <a href="/transform/kulturdiagnose.html">Kulturdiagnose</a>
+            <a href="/transform/kulturaufbau.html">Kulturaufbau</a>
+            <a href="/transform/begleitung.html">Transformationsbegleitung</a>
+            <a href="/transform/retainer.html">Strategischer Retainer</a>
+          </div>
+        </div>
+
+        <!-- ACADEMY -->
+        <div class="angebot-block">
+          <span class="angebot-num">04</span>
+          <a href="/academy/" class="angebot-title">Academy</a>
+          <p class="angebot-desc">21 Online-Kurse in 5 Lernpfaden — self-paced, direkt anwendbar. Führungswissen das funktioniert. Aus echter Praxis.</p>
+          <a href="/academy/" class="angebot-overview-link">Zur Übersicht</a>
+          <div class="angebot-links">
+            <a href="/academy/">Führungseinstieg</a>
+            <a href="/academy/">Teamführung</a>
+            <a href="/academy/">Entscheidung &amp; Strategie</a>
+            <a href="/academy/">Kommunikation &amp; Einfluss</a>
+            <a href="/academy/">Transformation &amp; Supply Chain</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" aria-label="Kontaktaufruf">
+    <div class="container cta-section">
+      <h2>Nicht sicher welches Angebot passt?</h2>
+      <p>Im ersten Gespräch finden wir gemeinsam heraus was Ihre Situation braucht — kostenlos und unverbindlich.</p>
+      <a href="/kontakt.html" class="btn-primary">Erstgespräch buchen</a>
+    </div>
+  </section>
+
 </main>
 
 <footer class="aplead-footer" aria-label="Footer">
@@ -243,6 +364,6 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>

@@ -124,7 +124,7 @@
     /* Mark dropdown trigger active when on a sub-page */
     const dropdownTrigger = document.querySelector('.nav-dropdown-trigger');
     if (dropdownTrigger) {
-      const subPaths = ['/coach', '/develop', '/transform', '/academy'];
+      const subPaths = ['/angebot', '/coach', '/develop', '/transform', '/academy'];
       const isSubPage = subPaths.some(function(p) { return path.startsWith(p); });
       dropdownTrigger.classList.toggle('active', isSubPage);
     }
