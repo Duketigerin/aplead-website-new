@@ -396,11 +396,19 @@ h4 { font-size: var(--h4); font-weight: 500; line-height: 1.3; }
     rgba(255,255,255,0.50) 100%
   );
 }
-.hero-bar {
+.hero-bar { display: none; }
+
+main {
+  position: relative;
+}
+main::before {
+  content: '';
   position: absolute;
   left: 0; top: 0; bottom: 0;
   width: 6px;
   background: var(--yellow);
+  z-index: 10;
+  pointer-events: none;
 }
 .hero-content {
   position: relative;
