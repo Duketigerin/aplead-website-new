@@ -1,0 +1,28 @@
+﻿<svg
+   width="284.53128"
+   height="78.838715"
+   viewBox="0 0 284.53128 78.838715"
+   xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(-125.50929,-101.9886)">
+    <text
+       x="125.35303"
+       y="148.5511"
+       font-family="Inter, 'Space Grotesk', system-ui, sans-serif"
+       font-size="64"
+       font-weight="800"
+       fill="#ffffff">APLEAD</text>
+    <text
+       x="125.24152"
+       y="175.11247"
+       font-family="Inter, 'Space Grotesk', system-ui, sans-serif"
+       font-size="28"
+       font-weight="500"
+       fill="#ffffff">Leadership. Applied.</text>
+    <rect
+       x="252.63489"
+       y="101.98996"
+       width="11.787636"
+       height="46.567295"
+       fill="#ffcc00"/>
+  </g>
+</svg>
