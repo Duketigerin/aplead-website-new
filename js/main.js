@@ -56,7 +56,7 @@
   /* ── 1b. MOBILE DROPDOWN ── */
   const mobileDropdownTrigger = document.querySelector('.mobile-dropdown-trigger');
   const mobileDropdownItems   = document.querySelector('.mobile-dropdown-items');
-  mobileDropdownTrigger && mobileDropdownTrigger.addEventListener('click', function () {
+  mobileDropdownTrigger && mobileDropdownItems && mobileDropdownTrigger.addEventListener('click', function () {
     const isOpen = mobileDropdownItems.classList.toggle('open');
     this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   });
